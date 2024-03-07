@@ -3,10 +3,10 @@ import { Outlet, Link } from "react-router-dom";
 
 function App() {
   return (
-    <main className="main-container p-4 max-w-screen-lg mx-auto">
+    <main className="main-container lg:p-16 md:p-8 p-4 max-w-screen-lg mx-auto">
       <div className="nav-section flex flex-col gap-2">
         <Link to="/">
-          <h1 className="text-xl">Game Box</h1>
+          <h1 className="text-xl">Games</h1>
         </Link>
         <div className="border p-2 flex-grow">
           <ul>
