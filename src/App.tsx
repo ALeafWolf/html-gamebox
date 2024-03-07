@@ -1,15 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Outlet, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Game Box</h1>
-      <ul>
-        <li>2048</li>
-      </ul>
-    </div>
+    <main className="main-container p-4 max-w-screen-lg mx-auto">
+      <div className="nav-section flex flex-col gap-2">
+        <Link to="/">
+          <h1 className="text-xl">Game Box</h1>
+        </Link>
+        <div className="border p-2 flex-grow">
+          <ul>
+            <li>
+              <Link to="/2048">2048</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <Outlet />
+    </main>
   );
 }
 
